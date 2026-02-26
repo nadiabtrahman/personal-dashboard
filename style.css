@@ -6,12 +6,46 @@ header, main{
     font-family: Cambria, 'Times New Roman', serif;
 }
 
+#toDoList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+/*Done To-do List*/
+.doneList{
+    text-decoration: line-through;
+}
+
 /* Default Light Theme */
 body{
     border: 1px solid darkgrey;
     margin: 40px;
     background-color: white;
     color: black;
+}
+
+.taskItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 14px;
+    margin: 8px auto;
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+
+.taskItem button {
+    margin-left: 8px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.taskItem button:hover {
+    opacity: 0.7;
 }
 
 /*Dark Theme*/
@@ -27,11 +61,11 @@ body{
 }
 
 .darkTheme button{
-    background-color: white;
-    color: black;
+    background-color: black;
+    border-color: white;
+    color: white;
 }
 
-/*Done To-do List*/
-.doneList{
-    text-decoration: line-through;
+.darkTheme .taskItem {
+    border-color: white;
 }

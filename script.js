@@ -21,18 +21,22 @@ toDoForm.addEventListener("submit", (event) =>{
     if(task.value === "")return;
 
     const toDo = document.createElement("li");
-    toDo.innerText = task.value + " ";
+    toDo.classList.add("taskItem");
+
+    const textSpan = document.createElement("span");
+    textSpan.textContent = task.value;
     
     const doneBtn = document.createElement("button");
-    doneBtn.textContent = "✔️"
+    doneBtn.textContent = "✓"
     doneBtn.addEventListener("click", () =>{
-        toDo.classList.add("doneList")
+            toDo.classList.add("doneList")
     })
 
     const removeBtn = document.createElement("button");
     removeBtn.textContent = "🗑️"
     removeBtn.addEventListener("click", () => toDo.remove());
 
+    toDo.append(textSpan);
     toDo.append(doneBtn);
     toDo.append(removeBtn);
     toDoList.append(toDo);
