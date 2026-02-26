@@ -19,7 +19,7 @@ header, main{
 
 /* Default Light Theme */
 body{
-    border: 1px solid darkgrey;
+    border: 1px solid grey;
     margin: 40px;
     background-color: white;
     color: black;
@@ -27,6 +27,24 @@ body{
 
 #task::placeholder{
     text-align: center;
+}
+
+button{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+#task{
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+
+#submitBtn{
+    background-color: white;
+    border-color: black;
+    color: black;
 }
 
 .taskItem {
@@ -72,13 +90,12 @@ body{
 }
 
 .darkTheme #task{
-    background-color: grey;
+    background-color: lightgrey;
     border-color: white;
-    color: white;
 }
 
 .darkTheme #task::placeholder{
-    color: white;
+    color: black;
 }
 
 .darkTheme #submitBtn{
