@@ -25,15 +25,20 @@ body{
     color: black;
 }
 
+#task::placeholder{
+    text-align: center;
+}
+
 .taskItem {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 14px;
     margin: 8px auto;
-    width: 80%;
+    width: 60%;
     border-radius: 6px;
     border: 1px solid grey;
+    gap: 10px;
 }
 
 .taskItem button {
@@ -61,6 +66,22 @@ body{
 }
 
 .darkTheme button{
+    background-color: black;
+    border-color: white;
+    color: white;
+}
+
+.darkTheme #task{
+    background-color: grey;
+    border-color: white;
+    color: white;
+}
+
+.darkTheme #task::placeholder{
+    color: white;
+}
+
+.darkTheme #submitBtn{
     background-color: black;
     border-color: white;
     color: white;
