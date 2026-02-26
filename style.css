@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+header, main{
+    text-align: center;
+    font-family: Cambria, 'Times New Roman', serif;
+}
+
+/* Default Light Theme */
+body{
+    border: 1px solid darkgrey;
+    margin: 40px;
+    background-color: white;
+    color: black;
+}
+
+/*Dark Theme*/
+.darkTheme{
+    border: 1px solid white;
+    margin: 40px;
+    background-color: black;
+    color: lightgrey;
+}
+
+.darkTheme hr{
+    color: white;
+}
+
+.darkTheme button{
+    background-color: white;
+    color: black;
+}
+
+/*Done To-do List*/
+.doneList{
+    text-decoration: line-through;
+}
